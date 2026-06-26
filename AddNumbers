@@ -1,0 +1,30 @@
+import java.util.Scanner;   // Imports Scanner class for user input
+
+public class AddNumbers      // Class name
+{
+    public static void main(String[] args)
+    {
+        // Creates Scanner object to take input from keyboard
+        Scanner sc = new Scanner(System.in);
+
+        // Declares two integer variables
+        int a, b;
+
+        // Asks user to enter first number
+        System.out.print("Enter first number: ");
+        a = sc.nextInt();      // Stores first number
+
+        // Asks user to enter second number
+        System.out.print("Enter second number: ");
+        b = sc.nextInt();      // Stores second number
+
+        // Adds both numbers
+        int sum = a + b;
+
+        // Displays result
+        System.out.println("Sum = " + sum);
+
+        // Closes Scanner object
+        sc.close();
+    }
+}
