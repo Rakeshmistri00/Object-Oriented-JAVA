@@ -1,0 +1,37 @@
+// Import Scanner class to take input from the keyboard
+import java.util.Scanner;
+
+// Class name (File name should be EvenOdd.java)
+public class EvenOdd
+{
+    // Main method - Program execution starts from here
+    public static void main(String[] args)
+    {
+        // Create Scanner object for user input
+        Scanner sc = new Scanner(System.in);
+
+        // Declare an integer variable
+        int num;
+
+        // Ask the user to enter a number
+        System.out.print("Enter a number: ");
+
+        // Read the number entered by the user
+        num = sc.nextInt();
+
+        // Check whether the number is divisible by 2
+        if (num % 2 == 0)
+        {
+            // Executes if remainder is 0
+            System.out.println(num + " is an Even Number");
+        }
+        else
+        {
+            // Executes if remainder is not 0
+            System.out.println(num + " is an Odd Number");
+        }
+
+        // Close the Scanner object
+        sc.close();
+    }
+}
