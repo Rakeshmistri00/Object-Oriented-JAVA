@@ -1,0 +1,35 @@
+// Import Scanner class to take input from the keyboard
+import java.util.Scanner;
+
+// Class name (File name should be Factorial.java)
+public class Factorial
+{
+    // Main method - Program execution starts from here
+    public static void main(String[] args)
+    {
+        // Create Scanner object for user input
+        Scanner sc = new Scanner(System.in);
+
+        // Declare variables
+        int num, fact = 1;
+
+        // Ask the user to enter a number
+        System.out.print("Enter a number: ");
+
+        // Read the number entered by the user
+        num = sc.nextInt();
+
+        // Loop from 1 to the entered number
+        for(int i = 1; i <= num; i++)
+        {
+            // Multiply fact by i in each iteration
+            fact = fact * i;
+        }
+
+        // Display the factorial
+        System.out.println("Factorial = " + fact);
+
+        // Close the Scanner object
+        sc.close();
+    }
+}
