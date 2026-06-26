@@ -1,0 +1,48 @@
+// Import Scanner class to take input from the keyboard
+import java.util.Scanner;
+
+// Class name (File name should be LargestNumber.java)
+public class LargestNumber
+{
+    // Main method - Program execution starts from here
+    public static void main(String[] args)
+    {
+        // Create Scanner object for user input
+        Scanner sc = new Scanner(System.in);
+
+        // Declare three integer variables
+        int a, b, c;
+
+        // Ask the user to enter the first number
+        System.out.print("Enter first number: ");
+        a = sc.nextInt();   // Read first integer
+
+        // Ask the user to enter the second number
+        System.out.print("Enter second number: ");
+        b = sc.nextInt();   // Read second integer
+
+        // Ask the user to enter the third number
+        System.out.print("Enter third number: ");
+        c = sc.nextInt();   // Read third integer
+
+        // Compare all three numbers
+        if (a >= b && a >= c)
+        {
+            // Executes if 'a' is greater than or equal to both b and c
+            System.out.println("Largest Number = " + a);
+        }
+        else if (b >= a && b >= c)
+        {
+            // Executes if 'b' is greater than or equal to both a and c
+            System.out.println("Largest Number = " + b);
+        }
+        else
+        {
+            // Executes when 'c' is the largest
+            System.out.println("Largest Number = " + c);
+        }
+
+        // Close the Scanner object
+        sc.close();
+    }
+}
