@@ -1,0 +1,25 @@
+class FactorialDemo{   //Beginning of the class 'FactorialDemo'
+
+    static void factorial(int... num){   //Variable length argument method
+
+        for(int n : num){
+
+            int fact = 1;
+
+            for(int i = 1; i <= n; i++){
+
+                fact = fact * i;
+            }
+
+            System.out.println("Factorial of " + n + " = " + fact);
+        }
+
+    }
+
+    public static void main(String args[]){   //Beginning of the main method
+
+        factorial(5, 4);
+
+    }   //End of the main method
+
+}   //End of the class 'FactorialDemo'
